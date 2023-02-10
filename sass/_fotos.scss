@@ -5,23 +5,17 @@
     .fotoPortada {
         height: 200px;
         margin-top: 15px;
-        margin-bottom: 20px;
-
-        @include mobile {
-            height: 230px;
-
+        margin-bottom: 10px;
             @include tablet {
                 height: 350px;
             }
 
             @include desktop {
-                height: 100%;
+                height: 450px;
                 margin-top: 15px;
             }
         }
     }
-
-}
 
 .porton {
     height: 230px;

@@ -38,7 +38,7 @@ body {
     text-align: center;
     font-size: x-large;
     font-weight: inherit;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 
     @include mobile {
         margin-top: 50px;
@@ -55,24 +55,26 @@ body {
 h1 {
     text-align: center;
     margin-top: 20px;
+    @include desktop{
+        margin-top: 10px;
+    }
 }
 
 h2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: large;
     @include desktop{
-        font-size: 35px;
-        margin-top: 40px;
+        font-size: 25px;
+        margin-top: 30px;
     }
 }
 
 p {
     text-align: center;
     margin: 20px;
-    @include desktop{
-        font-size: 30px;
-        margin-top: 35px;
+    @include desktop {
+        line-height: 30px;
     }
 }
 

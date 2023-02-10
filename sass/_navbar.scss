@@ -19,3 +19,9 @@
         }
     }
 }
+
+nav ul li{
+    @include desktop{
+        font-size: 23px;
+    }
+}
