@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  background-color: rgb(255, 247, 234);
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  align-content: space-between;
+  justify-items: stretch;
+  grid-template-areas: "nav" "main" "galeria" "footer";
+}
+
+.main-grid {
+  grid-area: main;
+}
+
+.galeria {
+  grid-area: galeria;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.main-head {
+  text-align: center;
+  font-size: x-large;
+  font-weight: inherit;
+  margin-bottom: 5px;
+}
+@media (min-width: 481px) {
+  .main-head {
+    margin-top: 50px;
+    font-size: xx-large;
+  }
+}
+@media (min-width: 481px) and (min-width: 1024px) {
+  .main-head {
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 35px;
+    margin-top: 40px;
+  }
+}
+
+p {
+  text-align: center;
+  margin: 20px;
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 30px;
+    margin-top: 35px;
+  }
+}
+
+.navbar {
+  background-color: rgb(238, 219, 190);
+}
+.navbar .logo-nav {
+  height: 180px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.navbar .letras-logo {
+  justify-content: right;
+}
+.navbar .navbar-nav .nav-item a:hover {
+  color: aliceblue;
+}
+
+.carousel-inner {
+  margin-top: 10px;
+}
+
+.comodidadestxt {
+  margin-top: 10px;
+  justify-items: center;
+}
+
+.exteriorestxt {
+  text-align: center;
+}
+
+.interiorestxt {
+  font-size: 30px;
+}
+
+.exteriores {
+  font-size: x-large;
+  text-align: center;
+}
+
+.flex-fotoPortada {
+  display: grid;
+  justify-content: center;
+}
+.flex-fotoPortada .fotoPortada {
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+@media (min-width: 481px) {
+  .flex-fotoPortada .fotoPortada {
+    height: 230px;
+  }
+}
+@media (min-width: 481px) and (min-width: 768px) {
+  .flex-fotoPortada .fotoPortada {
+    height: 350px;
+  }
+}
+@media (min-width: 481px) and (min-width: 1024px) {
+  .flex-fotoPortada .fotoPortada {
+    height: 100%;
+    margin-top: 15px;
+  }
+}
+
+.porton {
+  height: 230px;
+}
+@media (min-width: 768px) {
+  .porton {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .porton {
+    height: 400px;
+  }
+}
+
+.galeria {
+  display: grid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  grid-gap: 10px;
+}
+@media (min-width: 481px) {
+  .galeria {
+    grid-template-columns: auto auto;
+  }
+}
+
+.foto-pieza {
+  height: 150px;
+  border-radius: 30%;
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .foto-pieza {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .foto-pieza {
+    height: 350px;
+  }
+}
+.foto-pieza:hover {
+  transform: scale(1.3);
+}
+
+.foto-cocina {
+  height: 150px;
+  border-radius: 30%;
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .foto-cocina {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .foto-cocina {
+    height: 350px;
+  }
+}
+.foto-cocina:hover {
+  transform: scale(1.3);
+}
+
+.quincho {
+  height: 150px;
+  border-radius: 30%;
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .quincho {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .quincho {
+    height: 350px;
+  }
+}
+.quincho:hover {
+  transform: scale(1.3);
+}
+
+.foto-living {
+  height: 150px;
+  border-radius: 30%;
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .foto-living {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .foto-living {
+    height: 350px;
+  }
+}
+.foto-living:hover {
+  transform: scale(1.3);
+}
+
+.main-qs {
+  display: grid;
+}
+
+.qs-section {
+  display: grid;
+  justify-content: space-around;
+}
+
+.qs-img {
+  display: grid;
+  justify-content: space-around;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+
+.gmap_iframe {
+  height: 400px !important;
+}
+
+footer {
+  width: auto;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  background-color: rgb(238, 219, 190);
+  color: brown;
+  font-size: xx-small;
+}/*# sourceMappingURL=estilos.css.map */
